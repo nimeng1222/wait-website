@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink-950: #0a0e1a;
+  --color-ink-900: #0f1526;
+  --color-ink-800: #151d33;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink-950 text-slate-300 antialiased;
+}
+
+::selection {
+  background: rgb(37 99 235 / 0.4);
+}
