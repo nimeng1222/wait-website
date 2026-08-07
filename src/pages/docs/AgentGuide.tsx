@@ -4,9 +4,8 @@ import { Code, DocH1, DocH2, DocLead, DocNote, DocOl, DocP, DocTable, DocUl } fr
 const AGENT_CMD =
   'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-agent.sh -o install-agent.sh && sudo bash install-agent.sh --endpoint "https://<主控地址>" --token "<节点token>"'
 
-const ENV_FILE_CMDS = `sudo mkdir -p /etc/wait-agent
-sudoedit /etc/wait-agent/wait-agent.env   # 写入 token 与 endpoint
-sudo chmod 600 /etc/wait-agent/wait-agent.env
+const ENV_FILE_CMDS = `sudoedit /opt/wait/wait-agent.env   # 写入 token 与 endpoint
+sudo chmod 600 /opt/wait/wait-agent.env
 sudo systemctl restart wait-agent`
 
 export function AgentGuide() {
@@ -52,12 +51,12 @@ export function AgentGuide() {
         不建议把 token 直接暴露在进程命令行中（<Code>ps</Code> 可见）。推荐写入 systemd
         环境文件并收紧权限，仅 root 可读：
       </DocP>
-      <CodeBlock code={ENV_FILE_CMDS} title="/etc/wait-agent/wait-agent.env" />
+      <CodeBlock code={ENV_FILE_CMDS} title="/opt/wait/wait-agent.env" />
       <DocP>
         文件内容示例（变量名以安装脚本生成的服务单元为准）：
       </DocP>
       <CodeBlock
-        code={'TOKEN=<节点token>\nENDPOINT=https://<主控地址>'}
+        code={'AGENT_TOKEN=<节点token>\nAGENT_ENDPOINT=https://<主控地址>'}
         title="wait-agent.env"
       />
 
@@ -65,7 +64,7 @@ export function AgentGuide() {
       <DocP>
         从{' '}
         <a
-          href="https://github.com/nimeng1222/wait-agent/releases"
+          href="https://github.com/nimeng1222/wait-release/releases"
           target="_blank"
           rel="noreferrer"
           className="text-blue-400 hover:text-blue-300"

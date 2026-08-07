@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import {
   Activity,
   ArrowRight,
@@ -81,7 +81,7 @@ export function Home() {
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
                 开源 · 自托管 · 轻量
               </span>
-              <h1 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+              <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
                 你的服务器，
                 <span className="bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
                   一目了然
@@ -100,7 +100,7 @@ export function Home() {
                   <ArrowRight size={15} />
                 </Link>
                 <a
-                  href="https://github.com/nimeng1222/wait-monitor"
+                  href="https://github.com/nimeng1222/wait-release"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-medium text-slate-200 transition-colors hover:bg-white/10"
@@ -137,7 +137,7 @@ export function Home() {
       </section>
 
       {/* 特性网格 */}
-      <section className="py-20">
+      <section className="overflow-hidden py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2 className="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl">
             一个面板，管好所有服务器
@@ -216,7 +216,7 @@ export function Home() {
       </section>
 
       {/* 截图展示 */}
-      <section className="py-20">
+      <section className="overflow-hidden py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex flex-col items-center">
             <h2 className="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl">

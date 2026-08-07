@@ -4,7 +4,7 @@ import { ChevronDown, Search } from 'lucide-react'
 const FAQS: { q: string; a: string }[] = [
   {
     q: '初始管理员账号密码在哪里？',
-    a: '首次安装完成后会自动生成随机管理员账号密码。\n脚本 / 二进制安装：查看 `/opt/wait-monitor/data/initial-admin-credentials.json`。\nDocker 部署：执行 `docker logs wait`，或查看挂载数据目录中的同名文件。\n出于安全考虑，该文件在首次登录成功后会自动删除，请登录后立即修改密码。',
+    a: '首次安装完成后会自动生成随机管理员账号密码。\n脚本安装：查看 `/opt/wait-monitor/data/initial-admin-credentials.json`。\n直接运行二进制时，请查看进程输出及当前数据目录中的同名文件。\n出于安全考虑，该文件在首次登录成功后会自动删除，请登录后立即修改密码。',
   },
   {
     q: '服务启动失败，提示 status=200/CHDIR 怎么办？',
@@ -36,7 +36,7 @@ const FAQS: { q: string; a: string }[] = [
   },
   {
     q: '支持哪些操作系统和架构？',
-    a: '服务端：Linux amd64 / arm64（其他环境可用 Docker 部署）。\nAgent：Linux / Windows / macOS，资源占用极低。\n面板支持现代浏览器，提供中英双语与明暗两套主题。',
+    a: '服务端公开预编译包：Linux amd64 / arm64。\nAgent：Linux / Windows / macOS，资源占用极低。\n面板支持现代浏览器，提供中英双语与明暗两套主题。',
   },
   {
     q: '初始凭据文件会一直在吗？',
@@ -87,7 +87,7 @@ export function Faq() {
         <p className="mt-3 text-[15px] text-slate-400">
           安装、部署与使用中的高频问题。找不到答案？到{' '}
           <a
-            href="https://github.com/nimeng1222/wait-monitor/issues"
+            href="https://github.com/nimeng1222/wait-release/issues"
             target="_blank"
             rel="noreferrer"
             className="text-blue-400 hover:text-blue-300"

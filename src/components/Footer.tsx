@@ -2,10 +2,8 @@ import { Logo } from './Logo'
 import { GithubIcon } from './GithubIcon'
 
 const repos = [
-  { name: 'wait-monitor', desc: '服务端', href: 'https://github.com/nimeng1222/wait-monitor' },
-  { name: 'wait-agent', desc: '探针 Agent', href: 'https://github.com/nimeng1222/wait-agent' },
-  { name: 'wait-web-next', desc: '前端', href: 'https://github.com/nimeng1222/wait-web-next' },
-  { name: 'wait-release', desc: '安装脚本', href: 'https://github.com/nimeng1222/wait-release' },
+  { name: 'wait-release', desc: '安装脚本与下载', href: 'https://github.com/nimeng1222/wait-release' },
+  { name: 'Releases', desc: '已签名发布包', href: 'https://github.com/nimeng1222/wait-release/releases' },
 ]
 
 export function Footer() {
@@ -22,13 +20,13 @@ export function Footer() {
               轻量级自托管服务器监控系统。Go 单二进制 + SQLite，零外部依赖，五分钟完成部署。
             </p>
             <a
-              href="https://github.com/nimeng1222/wait-monitor"
+              href="https://github.com/nimeng1222/wait-release"
               target="_blank"
               rel="noreferrer"
               className="mt-4 inline-flex items-center gap-2 text-sm text-slate-400 transition-colors hover:text-white"
             >
               <GithubIcon size={14} />
-              github.com/nimeng1222
+              github.com/nimeng1222/wait-release
             </a>
           </div>
 

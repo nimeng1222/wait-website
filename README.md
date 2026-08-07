@@ -1,8 +1,8 @@
 # wait-website
 
-[wait-monitor](https://github.com/nimeng1222/wait-monitor) 的项目官网：营销展示 + 使用文档 + 常见问题。
+[wait-monitor](https://github.com/nimeng1222/wait-release) 的项目官网：营销展示 + 使用文档 + 常见问题。
 
-技术栈：Vite 6 + React 19 + TypeScript + Tailwind CSS v4 + react-router-dom v7（HashRouter）。
+技术栈：Vite 6 + React 19 + TypeScript + Tailwind CSS v4 + React Router v8（HashRouter）。
 
 ## 本地开发
 
@@ -47,7 +47,4 @@ npm run preview  # 本地预览构建产物
 
 ## 相关仓库
 
-- [wait-monitor](https://github.com/nimeng1222/wait-monitor) — 服务端（Go 单二进制 + SQLite）
-- [wait-agent](https://github.com/nimeng1222/wait-agent) — 探针 Agent
-- [wait-web-next](https://github.com/nimeng1222/wait-web-next) — 监控面板前端
-- [wait-release](https://github.com/nimeng1222/wait-release) — 安装脚本与发布
+- [wait-release](https://github.com/nimeng1222/wait-release) — 公开安装脚本、服务端与 Agent 发布包

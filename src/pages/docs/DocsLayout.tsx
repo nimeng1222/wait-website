@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router'
 import { BookOpen, Rocket, Server, Wrench } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 

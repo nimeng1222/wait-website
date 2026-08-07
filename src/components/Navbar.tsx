@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router'
 import { Menu, X } from 'lucide-react'
 import { Logo } from './Logo'
 import { GithubIcon } from './GithubIcon'
@@ -51,7 +51,7 @@ export function Navbar() {
             </NavLink>
           ))}
           <a
-            href="https://github.com/nimeng1222/wait-monitor"
+            href="https://github.com/nimeng1222/wait-release"
             target="_blank"
             rel="noreferrer"
             className="ml-2 inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-1.5 text-sm text-slate-200 transition-colors hover:bg-white/10"
@@ -90,7 +90,7 @@ export function Navbar() {
               </NavLink>
             ))}
             <a
-              href="https://github.com/nimeng1222/wait-monitor"
+              href="https://github.com/nimeng1222/wait-release"
               target="_blank"
               rel="noreferrer"
               className="mt-1 inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-slate-200"

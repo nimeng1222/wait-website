@@ -68,7 +68,7 @@ export function ConfigRef() {
             '初始凭据文件',
             <Code key="4">/opt/wait-monitor/data/initial-admin-credentials.json</Code>,
           ],
-          ['Agent 环境文件', <Code key="5">/etc/wait-agent/wait-agent.env</Code>],
+          ['Agent 环境文件', <Code key="5">/opt/wait/wait-agent.env</Code>],
         ]}
       />
 
