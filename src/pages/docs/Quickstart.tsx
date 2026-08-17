@@ -2,7 +2,7 @@ import { CodeBlock } from '@/components/CodeBlock'
 import { Code, DocH1, DocH2, DocH3, DocLead, DocNote, DocP, DocUl } from '@/components/doc'
 
 const INSTALL_CMD =
-  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
+  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/v0.1.72/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
 const SYSTEMD_CMDS = `sudo systemctl status wait-monitor   # 查看运行状态
 sudo systemctl restart wait-monitor  # 重启服务
 sudo systemctl stop wait-monitor     # 停止服务

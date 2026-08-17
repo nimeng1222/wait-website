@@ -19,9 +19,9 @@ import { CodeBlock } from '@/components/CodeBlock'
 import { GithubIcon } from '@/components/GithubIcon'
 
 const INSTALL_CMD =
-  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
+  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/v0.1.72/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
 const AGENT_CMD =
-  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-agent.sh -o install-agent.sh && sudo bash install-agent.sh --endpoint "https://<主控地址>" --token "<节点token>"'
+  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/v0.1.72/install-agent.sh -o install-agent.sh && sudo bash install-agent.sh --endpoint "https://<主控地址>" --token "<节点token>"'
 
 const shot = (name: string) => `${import.meta.env.BASE_URL}screenshots/${name}`
 

@@ -2,7 +2,7 @@ import { CodeBlock } from '@/components/CodeBlock'
 import { Code, DocH1, DocH2, DocLead, DocNote, DocOl, DocP, DocUl } from '@/components/doc'
 
 const UPGRADE_CMD =
-  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
+  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/v0.1.72/install-wait.sh -o install-wait.sh && sudo bash install-wait.sh'
 const LOG_CMDS = `sudo journalctl -u wait-monitor -f   # 服务端日志
 sudo journalctl -u wait-agent -f     # Agent 日志`
 const DATA_TREE = `/opt/wait-monitor/

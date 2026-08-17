@@ -2,7 +2,7 @@ import { CodeBlock } from '@/components/CodeBlock'
 import { Code, DocH1, DocH2, DocLead, DocNote, DocOl, DocP, DocTable, DocUl } from '@/components/doc'
 
 const AGENT_CMD =
-  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/main/install-agent.sh -o install-agent.sh && sudo bash install-agent.sh --endpoint "https://<主控地址>" --token "<节点token>"'
+  'curl -fsSL https://raw.githubusercontent.com/nimeng1222/wait-release/v0.1.72/install-agent.sh -o install-agent.sh && sudo bash install-agent.sh --endpoint "https://<主控地址>" --token "<节点token>"'
 
 const ENV_FILE_CMDS = `sudoedit /opt/wait/wait-agent.env   # 写入 token 与 endpoint
 sudo chmod 600 /opt/wait/wait-agent.env
